@@ -3,46 +3,21 @@
 # and obtained from the dandiarchive.
 '@context': 
   https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.10/context.json
+about: []
 access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
+acknowledgement: 'This work was supported by a Grant-in-Aid for Scientific Research
+  on Innovative Areas: Prediction and Decision Making (23120007) (K.D.), KAKENHI 26730124
+  (A.F.) and 15H01452 (A.F.), and internal funding from the Okinawa Institute of Science
+  and Technology Graduate University (K.D. and B.K.)'
 assetsSummary:
-  approach:
-  - name: behavioral approach
-    schemaKey: ApproachType
-  - name: microscopy approach; cell population imaging
-    schemaKey: ApproachType
-  dataStandard:
-  - identifier: RRID:SCR_015242
-    name: Neurodata Without Borders (NWB)
-    schemaKey: StandardsType
-  measurementTechnique:
-  - name: behavioral technique
-    schemaKey: MeasurementTechniqueType
-  - name: analytical technique
-    schemaKey: MeasurementTechniqueType
-  - name: surgical technique
-    schemaKey: MeasurementTechniqueType
-  numberOfBytes: 33336596008
-  numberOfFiles: 90
-  numberOfSubjects: 8
+  numberOfBytes: 0
+  numberOfFiles: 0
   schemaKey: AssetsSummary
-  species:
-  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
-    name: Mus musculus - House mouse
-    schemaKey: SpeciesType
-  variableMeasured:
-  - ProcessingModule
-  - ImagingPlane
-  - OpticalChannel
-  - BehavioralTimeSeries
-  - BehavioralEvents
-  - PlaneSegmentation
-  - Position
-  - SpatialSeries
-citation: Taniguchi, Masachika (2025) Two-photon calcium imaging in mouse PPC/PM during
-  auditory cue–guided virtual navigation (OIST, 2013–2014) (Version draft) [Data set].
-  DANDI Archive. https://dandiarchive.org/dandiset/001605/draft
+citation: Taniguchi, Masachika (2025) Two-photon calcium imaging of mouse PPC/PM during
+  auditory virtual navigation (Funamizu et al. 2016) (Version draft) [Data set]. DANDI
+  Archive. https://dandiarchive.org/dandiset/001605/draft
 contributor:
 - affiliation: []
   email: mtanigu-vendor@oist.jp
@@ -51,6 +26,7 @@ contributor:
   roleName:
   - dcite:ContactPerson
   schemaKey: Person
+- {}
 dateCreated: '2025-09-15T18:48:21.256096+00:00'
 description: This Dandiset contains session-wise NWB files converted from legacy MATLAB
   data for in vivo two-photon calcium imaging in head-fixed mice navigating a virtual
@@ -67,16 +43,19 @@ description: This Dandiset contains session-wise NWB files converted from legacy
   & Doya (Nature Neuroscience, 2016), which reported PPC/PM representations consistent
   with dynamic Bayesian inference during an auditory virtual-reality task (doi:10.1038/nn.4390).
   Please cite that article when using this dataset.
+ethicsApproval: []
 id: DANDI:001605/draft
 identifier: DANDI:001605
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
 - https://api.dandiarchive.org/api/dandisets/001605/versions/draft/assets/
-name: Two-photon calcium imaging in mouse PPC/PM during auditory cue–guided virtual
-  navigation (OIST, 2013–2014)
+name: Two-photon calcium imaging of mouse PPC/PM during auditory virtual navigation
+  (Funamizu et al. 2016)
+relatedResource: []
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.6.10
 url: https://dandiarchive.org/dandiset/001605/draft
 version: draft
+wasGeneratedBy: []
