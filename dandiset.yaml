@@ -7,10 +7,6 @@ about: []
 access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
-acknowledgement: 'This work was supported by a Grant-in-Aid for Scientific Research
-  on Innovative Areas: Prediction and Decision Making (23120007) (K.D.), KAKENHI 26730124
-  (A.F.) and 15H01452 (A.F.), and internal funding from the Okinawa Institute of Science
-  and Technology Graduate University (K.D. and B.K.)'
 assetsSummary:
   approach:
   - name: behavioral approach
@@ -45,47 +41,137 @@ assetsSummary:
   - PlaneSegmentation
   - Position
   - SpatialSeries
-citation: Taniguchi, Masachika (2025) Two-photon calcium imaging of mouse PPC/PM during
-  auditory virtual navigation (Funamizu et al. 2016) (Version draft) [Data set]. DANDI
-  Archive. https://dandiarchive.org/dandiset/001605/draft
+citation: Taniguchi, Masachika; Doya, Kenji (2025) Two-photon calcium imaging of mouse
+  PPC/PM during auditory virtual navigation (Funamizu et al. 2016) (Version draft)
+  [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001605/draft
 contributor:
 - affiliation: []
   email: mtanigu-vendor@oist.jp
   includeInCitation: true
   name: Taniguchi, Masachika
   roleName:
-  - dcite:ContactPerson
+  - dcite:DataCurator
+  - dcite:Maintainer
+  - dcite:Software
   schemaKey: Person
-- {}
+- affiliation:
+  - identifier: https://ror.org/02qg15b79
+    name: Okinawa Institute of Science and Technology Graduate University
+    schemaKey: Affiliation
+  email: doya@oist.jp
+  identifier: 0000-0002-2446-6820
+  includeInCitation: true
+  name: Doya, Kenji
+  roleName:
+  - dcite:Author
+  - dcite:Conceptualization
+  - dcite:ContactPerson
+  - dcite:FormalAnalysis
+  - dcite:Supervision
+  - dcite:Investigation
+  - dcite:Methodology
+  - dcite:ProjectLeader
+  schemaKey: Person
+  url: https://www.oist.jp/ncu
+- affiliation:
+  - identifier: https://ror.org/057zh3y96
+    name: The University of Tokyo
+    schemaKey: Affiliation
+  email: funamizu@iqb.u-tokyo.ac.jp
+  identifier: 0000-0001-8085-1048
+  name: Funamizu, Akihiro
+  roleName:
+  - dcite:Author
+  - dcite:Conceptualization
+  - dcite:ContactPerson
+  - dcite:DataCollector
+  - dcite:FormalAnalysis
+  - dcite:Investigation
+  - dcite:Methodology
+  - dcite:Researcher
+  - dcite:Software
+  - dcite:Validation
+  - dcite:Visualization
+  schemaKey: Person
+  url: https://sites.google.com/g.ecc.u-tokyo.ac.jp/funamizu-lab/home_eng
+- affiliation:
+  - identifier: https://ror.org/02qg15b79
+    name: Okinawa Institute of Science and Technology Graduate University
+    schemaKey: Affiliation
+  email: bkuhn@oist.jp
+  identifier: 0000-0002-6852-2433
+  name: Kuhn, Bernd
+  roleName:
+  - dcite:Author
+  - dcite:DataCollector
+  - dcite:Investigation
+  - dcite:Methodology
+  - dcite:Resources
+  - dcite:Researcher
+  - dcite:Validation
+  schemaKey: Person
+  url: https://www.oist.jp/onu
+- awardNumber: 23120007, 26730124
+  identifier: https://ror.org/00hhkn466
+  name: Japan Society for the Promotion of Science
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+  url: http://www.jsps.go.jp/
+- awardNumber: Internal funding
+  identifier: https://ror.org/02qg15b79
+  name: Okinawa Institute of Science and Technology Graduate University
+  roleName:
+  - dcite:Resources
+  - dcite:Funder
+  - dcite:Affiliation
+  - dcite:EthicsApproval
+  schemaKey: Organization
+  url: https://www.oist.jp
 dateCreated: '2025-09-15T18:48:21.256096+00:00'
-description: This Dandiset contains session-wise NWB files converted from legacy MATLAB
-  data for in vivo two-photon calcium imaging in head-fixed mice navigating a virtual
-  corridor guided by auditory cues. Imaging targeted posterior parietal cortex (PPC)
-  and adjacent posteromedial cortex (PM) across layers 2/3 and 5 while animals ran
-  on a spherical treadmill in darkness with continuous or intermittent sound feedback.
-  The dataset includes segmented ROI masks and population activity (raw ratio and
-  ΔF/F) as RoiResponseSeries, together with aligned behavioral signals (locomotion/position,
-  forward–lateral speed, lick rate, sound on/off indicators, and reward events) stored
-  under the behavior module. Sampling is uniform at ~30.9 Hz for imaging and behavior,
-  enabling trial-level analyses of neural dynamics during goal-directed navigation.
-  These data support investigations of multisensory integration and predictive coding
-  in posterior cortical areas and are closely related to the study by Funamizu, Kuhn
-  & Doya (Nature Neuroscience, 2016), which reported PPC/PM representations consistent
-  with dynamic Bayesian inference during an auditory virtual-reality task (doi:10.1038/nn.4390).
-  Please cite that article when using this dataset.
+datePublished: '2025-10-07T05:53:53.586907+00:00'
+description: This Dandiset contains session-wise NWB files for in vivo two-photon
+  calcium imaging in head-fixed mice navigating an auditory virtual environment (Funamizu
+  A, Kuhn B, Doya K (2016). Neural substrate of dynamic Bayesian inference in the
+  cerebral cortex. Nature Neuroscience, 19, 1682-1689. https://doi.org/10.1038/nn.4390).
+  Imaging targeted posterior parietal cortex (PPC) and adjacent posteromedial cortex
+  (PM) across layers 2/3 and 5 while animals ran on a spherical treadmill in darkness
+  with continuous or intermittent sound feedback. The dataset includes segmented ROI
+  masks and population activity (raw ratio and ΔF/F) as RoiResponseSeries, together
+  with aligned behavioral signals (locomotion/position, forward–lateral speed, lick
+  rate, sound on/off indicators, and reward events) stored under the behavior module.
+  Sampling is uniform at ~30.9 Hz for imaging and behavior, enabling trial-level analyses
+  of neural dynamics during goal-directed navigation. Please cite the above article
+  when using this dataset.
 ethicsApproval: []
 id: DANDI:001605/draft
 identifier: DANDI:001605
+keywords:
+- mouse, two-photon imaging, posterior parietal cortex, dynamic Bayesian inference
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
 - https://api.dandiarchive.org/api/dandisets/001605/versions/draft/assets/
 name: Two-photon calcium imaging of mouse PPC/PM during auditory virtual navigation
   (Funamizu et al. 2016)
+publishedBy:
+  endDate: '2025-10-07T05:53:53.586907+00:00'
+  id: urn:uuid:c397d537-42dc-4a4b-87e8-d54f8fa261b0
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2025-10-07T05:53:53.586907+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:f9701546-dde5-4a7d-a69c-0ac90e068353
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
 relatedResource: []
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.6.10
+studyTarget:
+- How dynamic Bayesian inference is realized in the cortical circuit
 url: https://dandiarchive.org/dandiset/001605/draft
 version: draft
 wasGeneratedBy: []
