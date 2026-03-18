@@ -1,0 +1,21 @@
+{
+    "Name": "Two-photon calcium imaging of mouse PPC/PM during auditory virtual navigation (Funamizu et al. 2016)",
+    "BIDSVersion": "1.10",
+    "HEDVersion": "8.3.0",
+    "Description": "This Dandiset contains session-wise NWB files for in vivo two-photon calcium imaging in head-fixed mice navigating an auditory virtual environment (Funamizu A, Kuhn B, Doya K (2016). Neural substrate of dynamic Bayesian inference in the cerebral cortex. Nature Neuroscience, 19, 1682-1689. https://doi.org/10.1038/nn.4390). Imaging targeted posterior parietal cortex (PPC) and adjacent posteromedial cortex (PM) across layers 2/3 and 5 while animals ran on a spherical treadmill in darkness with continuous or intermittent sound feedback. The dataset includes segmented ROI masks and population activity (raw ratio and \u0394F/F) as RoiResponseSeries, together with aligned behavioral signals (locomotion/position, forward\u2013lateral speed, lick rate, sound on/off indicators, and reward events) stored under the behavior module. Sampling is uniform at ~30.9 Hz for imaging and behavior, enabling trial-level analyses of neural dynamics during goal-directed navigation. Please cite the above article when using this dataset.",
+    "DatasetType": "raw",
+    "Authors": [
+        "Doya, Kenji",
+        "Funamizu, Akihiro",
+        "Kuhn, Bernd"
+    ],
+    "License": "CC-BY-4.0",
+    "GeneratedBy": [
+        {
+            "Name": "nwb2bids",
+            "Version": "0.9.1.dev27+gf0fb7253c",
+            "Description": "Tool to reorganize NWB files into a BIDS directory layout.",
+            "CodeURL": "https://github.com/con/nwb2bids"
+        }
+    ]
+}
